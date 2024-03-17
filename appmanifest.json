@@ -1,0 +1,10 @@
+{
+	"name": "Çarpım_Tablosu",
+	"short_name": "Çarpım_Tablosu",
+	"description": "",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": []
+}
