@@ -4323,13 +4323,6 @@ self.C3_JsPropNameTable = [
 	{btn1: 0},
 	{lambalar: 0},
 	{sayil11: 0},
-	{btn2: 0},
-	{btn3: 0},
-	{btn4: 0},
-	{btn5: 0},
-	{btn6: 0},
-	{btn7: 0},
-	{btn8: 0},
 	{DY: 0},
 	{backgroundHome: 0},
 	{btnBasla: 0},
@@ -4364,13 +4357,6 @@ self.InstanceType = {
 	btn1: class extends self.ISpriteInstance {},
 	lambalar: class extends self.ISpriteInstance {},
 	sayil11: class extends self.ISpriteInstance {},
-	btn2: class extends self.ISpriteInstance {},
-	btn3: class extends self.ISpriteInstance {},
-	btn4: class extends self.ISpriteInstance {},
-	btn5: class extends self.ISpriteInstance {},
-	btn6: class extends self.ISpriteInstance {},
-	btn7: class extends self.ISpriteInstance {},
-	btn8: class extends self.ISpriteInstance {},
 	DY: class extends self.ITextInstance {},
 	backgroundHome: class extends self.ISpriteInstance {},
 	btnBasla: class extends self.ISpriteInstance {},
@@ -4492,11 +4478,11 @@ self.C3_ExpressionFuncs = [
 		() => "y_degeri",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (16 + (92.5 * v0.GetValue()));
+			return () => (13 + (94 * v0.GetValue()));
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (150 + (84.5 * v0.GetValue()));
+			return () => (111 + (92 * v0.GetValue()));
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -4510,13 +4496,14 @@ self.C3_ExpressionFuncs = [
 		() => "x1_degeri",
 		() => 6,
 		() => "y1_degeri",
+		() => 2,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (1045 + (106 * v0.GetValue()));
+			return () => (1018 + (117 * v0.GetValue()));
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (283 + (102 * v0.GetValue()));
+			return () => (191 + (114 * v0.GetValue()));
 		},
 		p => {
 			const n0 = p._GetNode(0);
@@ -4546,7 +4533,6 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("skor:", v0.GetValue());
 		},
-		() => 2,
 		() => "Animation 1",
 		() => "Yanlış"
 ];
