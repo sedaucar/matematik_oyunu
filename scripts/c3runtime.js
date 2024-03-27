@@ -4340,6 +4340,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Cnds.TriggerOnce
 	];
 };
@@ -4361,7 +4362,6 @@ self.C3_JsPropNameTable = [
 	{sayil1: 0},
 	{btnCevap: 0},
 	{btn1: 0},
-	{lambalar: 0},
 	{sayil11: 0},
 	{DY: 0},
 	{backgroundHome: 0},
@@ -4374,16 +4374,23 @@ self.C3_JsPropNameTable = [
 	{hazirlayanlar: 0},
 	{Carpıım: 0},
 	{skor: 0},
-	{lamba1: 0},
+	{lamba: 0},
 	{lamba2: 0},
+	{lamba3: 0},
+	{lamba4: 0},
+	{lamba5: 0},
+	{lamba6: 0},
+	{lamba7: 0},
 	{butonlar: 0},
+	{lambalar: 0},
 	{x: 0},
 	{y: 0},
 	{tiklandi: 0},
 	{x1: 0},
 	{y1: 0},
 	{diziBtn: 0},
-	{solcarpim: 0}
+	{solcarpim: 0},
+	{dogruu: 0}
 ];
 
 self.InstanceType = {
@@ -4399,7 +4406,6 @@ self.InstanceType = {
 	number1: class extends self.ISpriteInstance {},
 	sayil1: class extends self.ISpriteInstance {},
 	btn1: class extends self.ISpriteInstance {},
-	lambalar: class extends self.ISpriteInstance {},
 	sayil11: class extends self.ISpriteInstance {},
 	DY: class extends self.ITextInstance {},
 	backgroundHome: class extends self.ISpriteInstance {},
@@ -4410,9 +4416,15 @@ self.InstanceType = {
 	hazirlayanlar: class extends self.ISpriteInstance {},
 	Carpıım: class extends self.ITextInstance {},
 	skor: class extends self.ITextInstance {},
-	lamba1: class extends self.ISpriteInstance {},
+	lamba: class extends self.ISpriteInstance {},
 	lamba2: class extends self.ISpriteInstance {},
-	butonlar: class extends self.ISpriteInstance {}
+	lamba3: class extends self.ISpriteInstance {},
+	lamba4: class extends self.ISpriteInstance {},
+	lamba5: class extends self.ISpriteInstance {},
+	lamba6: class extends self.ISpriteInstance {},
+	lamba7: class extends self.ISpriteInstance {},
+	butonlar: class extends self.ISpriteInstance {},
+	lambalar: class extends self.ISpriteInstance {}
 }
 }
 
@@ -4583,15 +4595,30 @@ self.C3_ExpressionFuncs = [
 		() => "Animation 1",
 		() => "Yanlış",
 		() => 3,
-		() => 5,
-		() => 7,
-		() => 10,
+		() => 12,
 		() => 15,
-		() => 20,
-		() => 25,
+		() => 18,
+		() => 21,
+		() => 24,
+		() => 27,
 		() => 30,
-		() => 40,
-		() => 50
+		() => 33,
+		() => 36,
+		() => 39,
+		() => 42,
+		() => 45,
+		() => 48,
+		() => 51,
+		() => 54,
+		() => 57,
+		() => 60,
+		() => 63,
+		() => 66,
+		() => 69,
+		() => 72,
+		() => 75,
+		() => 78,
+		() => 80
 ];
 
 
