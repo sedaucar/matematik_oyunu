@@ -4329,18 +4329,21 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Acts.SetPaused,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Cnds.For,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.System.Cnds.CompareVar,
-		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Exps.IID,
 		C3.Plugins.System.Exps.tokenat,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Text.Acts.AppendText,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.Sprite.Exps.X,
+		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.SubVar,
@@ -4386,6 +4389,8 @@ self.C3_JsPropNameTable = [
 	{lamba7: 0},
 	{durum: 0},
 	{btnMuzik: 0},
+	{dikey: 0},
+	{yatay: 0},
 	{butonlar: 0},
 	{lambalar: 0},
 	{x: 0},
@@ -4429,6 +4434,8 @@ self.InstanceType = {
 	lamba6: class extends self.ISpriteInstance {},
 	lamba7: class extends self.ISpriteInstance {},
 	btnMuzik: class extends self.ISpriteInstance {},
+	dikey: class extends self.ISpriteInstance {},
+	yatay: class extends self.ISpriteInstance {},
 	butonlar: class extends self.ISpriteInstance {},
 	lambalar: class extends self.ISpriteInstance {}
 }
@@ -4590,6 +4597,12 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => and("X", n0.ExpInstVar());
 		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpObject();
+		},
+		() => 575,
+		() => 480,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 1);
