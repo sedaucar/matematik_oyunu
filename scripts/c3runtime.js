@@ -4611,9 +4611,13 @@ self.C3_ExpressionFuncs = [
 		() => "Doğru",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => and("skor:", v0.GetValue());
+			return () => and("Skor:", v0.GetValue());
 		},
 		() => "Animation 1",
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and("skor:", v0.GetValue());
+		},
 		() => "Yanlış",
 		() => 3,
 		() => 5,
