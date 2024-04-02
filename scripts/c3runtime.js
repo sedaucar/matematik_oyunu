@@ -4320,21 +4320,18 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetLayerVisible,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Mouse.Acts.SetCursor,
-		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.OnLayoutEnd,
 		C3.Plugins.Audio.Acts.Stop,
-		C3.Plugins.Sprite.Cnds.IsVisible,
-		C3.Plugins.Audio.Acts.SetPaused,
-		C3.Plugins.Sprite.Acts.SetInstanceVar,
-		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.System.Cnds.For,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.System.Acts.CreateObject,
+		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.System.Cnds.CompareVar,
+		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.Sprite.Exps.IID,
 		C3.Plugins.System.Exps.tokenat,
 		C3.Plugins.System.Cnds.CompareBoolVar,
@@ -4345,9 +4342,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
+		C3.Plugins.Sprite.Acts.SetAnim,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.System.Acts.SubVar,
-		C3.Plugins.System.Cnds.TriggerOnce
+		C3.Plugins.System.Cnds.TriggerOnce,
+		C3.Plugins.Sprite.Cnds.IsVisible,
+		C3.Plugins.Audio.Acts.SetPaused
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4388,9 +4388,10 @@ self.C3_JsPropNameTable = [
 	{lamba6: 0},
 	{lamba7: 0},
 	{durum: 0},
-	{btnMuzik: 0},
+	{btnSes: 0},
 	{dikey: 0},
 	{yatay: 0},
+	{btnMuzik: 0},
 	{butonlar: 0},
 	{lambalar: 0},
 	{x: 0},
@@ -4433,9 +4434,10 @@ self.InstanceType = {
 	lamba5: class extends self.ISpriteInstance {},
 	lamba6: class extends self.ISpriteInstance {},
 	lamba7: class extends self.ISpriteInstance {},
-	btnMuzik: class extends self.ISpriteInstance {},
+	btnSes: class extends self.ISpriteInstance {},
 	dikey: class extends self.ISpriteInstance {},
 	yatay: class extends self.ISpriteInstance {},
+	btnMuzik: class extends self.ISpriteInstance {},
 	butonlar: class extends self.ISpriteInstance {},
 	lambalar: class extends self.ISpriteInstance {}
 }
@@ -4546,11 +4548,9 @@ self.C3_ExpressionFuncs = [
 		},
 		() => 0,
 		() => "muzik",
-		() => "",
 		() => "bilgi",
 		() => "background",
-		() => "close",
-		() => "open",
+		() => "ses",
 		() => "x_degeri",
 		() => 9,
 		() => "y_degeri",
@@ -4562,6 +4562,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (111 + (92 * v0.GetValue()));
 		},
+		() => "",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
@@ -4614,37 +4615,37 @@ self.C3_ExpressionFuncs = [
 			return () => and("Skor:", v0.GetValue());
 		},
 		() => "Animation 1",
+		() => "Yanlış",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("skor:", v0.GetValue());
 		},
-		() => "Yanlış",
 		() => 3,
+		() => 4,
 		() => 5,
 		() => 7,
+		() => 8,
+		() => 10,
 		() => 11,
+		() => 12,
 		() => 13,
+		() => 14,
 		() => 15,
+		() => 16,
 		() => 17,
+		() => 18,
 		() => 19,
+		() => 20,
 		() => 21,
+		() => 22,
 		() => 23,
+		() => 24,
 		() => 25,
+		() => 26,
 		() => 27,
-		() => 29,
-		() => 31,
-		() => 33,
-		() => 35,
-		() => 37,
-		() => 39,
-		() => 41,
-		() => 43,
-		() => 45,
-		() => 47,
-		() => 49,
-		() => 51,
-		() => 53,
-		() => 55
+		() => 28,
+		() => "close",
+		() => "open"
 ];
 
 
